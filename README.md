@@ -1,23 +1,29 @@
 gulp-iconify
 ============
 
-##My changes
+We're keeping this only for the sake of maintaining legacy projects!!
+
+Don't use it for new projects!!
+
+## MaxYari's changes
+
 You can provide `false` to `.cssOutput` and/or `.pngOutput` to disable scss->css and png generation, leaving only svg->svss generation, which is an only thing from this package that I personally use.
 Svg parser now also attempts to pull width/height data from `viewBox` property of svg, which is imo used quite often, if not more often than width/height.
 
+## Original readme
 
-##Original readme
 'A mystical CSS icon solution', [grunticon](https://github.com/filamentgroup/grunticon)-like build system for [Gulp](https://github.com/gulpjs/gulp):
 
 '~~grunticon is a Grunt.js~~ gulp-iconify is a gulp task that makes it easy to manage icons and background images for all devices, preferring HD (retina) SVG icons but also provides fallback support for standard definition browsers, and old browsers alike. From a CSS perspective, it's easy to use, as it generates a class referencing each icon, and doesn't use CSS sprites.'
 
 
-##Usage
+## Usage
 ```shell
 npm install gulp-iconify --save-dev
 ```
 
-###Simple example
+### Simple example
+
 ```javascript
 gulp.task('default', function() {
     iconify({
@@ -27,6 +33,7 @@ gulp.task('default', function() {
 ```
 
 This simple call defaults to the following:
+
 - SVGs will be passed through SVGO (and optimised)
 - Rendered PNGs will be saved in: './img/icons/png'
 - Rendered SCSS files will NOT be saved
@@ -37,7 +44,8 @@ This simple call defaults to the following:
 - The default styleTemplate will *not* use the height/width slugs
 - See [gulp-svg2png](https://github.com/akoenig/gulp-svg2png) for default settings
 
-###Customized example
+### Customized example
+
 ```javascript
 gulp.task('default', function() {
     iconify({
@@ -68,7 +76,8 @@ gulp.task('default', function() {
 
 Note: To disable SVGO, just set ```svgoOptions: { enabled: ___ }``` to anything but ```true``` .
 
-###Example (and default) styleTemplate:
+### Example (and default) styleTemplate:
+
 ```mustache
 .icon {
     background-repeat: no-repeat;
@@ -82,7 +91,8 @@ Note: To disable SVGO, just set ```svgoOptions: { enabled: ___ }``` to anything 
 }
 ```
 
-###Example styleTemplate with height/width slugs:
+### Example styleTemplate with height/width slugs:
+
 ```mustache
 .icon {
     background-repeat: no-repeat;
