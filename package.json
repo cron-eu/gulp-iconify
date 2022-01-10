@@ -1,6 +1,6 @@
 {
-  "name": "gulp-iconify",
-  "version": "0.6.0",
+  "name": "@cron-eu/gulp-iconify",
+  "version": "0.5.1",
   "description": "'A mystical CSS icon solution', grunticon-like build system.",
   "author": "Gabrijel Gavranović <gabrijel@gavro.nl> (http://gavro.nl)",
   "keywords": [
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:gavro/gulp-iconify.git"
+    "url": "git@github.com:cron-eu/gulp-iconify.git"
   },
   "main": "index.js",
   "dependencies": {
@@ -30,9 +30,9 @@
     "xmldom": "~0.1.19"
   },
   "bugs": {
-    "url": "https://github.com/gavro/gulp-iconify/issues"
+    "url": "https://github.com/cron-eu/gulp-iconify/issues"
   },
-  "homepage": "https://github.com/gavro/gulp-iconify",
+  "homepage": "https://github.com/cron-eu/gulp-iconify",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
